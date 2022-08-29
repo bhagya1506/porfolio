@@ -1,0 +1,586 @@
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <style>
+                        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: auto;
+        }
+        /*navbar*/
+        .navbar{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsla(189, 65%, 37%, 0.776);
+            position: sticky;
+            top:0;
+        }
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin: 20px 0px;
+        }
+        .navbar ul li{
+            font-family: 'Dancing Script', cursive;
+        font-family: 'Gelasio', serif;
+        font-family: 'Parisienne', cursive;
+        font-size: 1.1rem;
+        font-weight: bold;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: rgb(243, 229, 229);
+            padding: 8px 25px;
+            transition: all .5s ease;
+        }
+        nav ul li a:hover{
+            background-color: rgb(233, 235, 216);
+            color: #b04444d8;
+            box-shadow: 0 0 10px rgb(30, 31, 31);
+        }
+        .btn{
+            color: #fff;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 16px 40px;
+            border-radius: 500px;
+            display: inline-block;
+            font-weight: 500;
+            transition: all .4s ease-in-out;
+            background-size: 152% 100%;
+            background: #bd80c2;
+            border: 2px solid #4123476f;
+        }
+        .btn:hover{
+            background: transparent;
+            border-color: #a05b66;
+            color: #dddcdc;
+        }
+        /*home section*/
+        #home{
+            display: flex;
+            flex-direction: column;
+            background-image: url('https://images.wallpapersden.com/image/download/nebula-space_a2pla22UmZqaraWkpJRmbmdlrWZlbWU.jpg');
+            background-size: cover;
+            height: 840px;
+            justify-content: center;
+            align-items: center;
+            color: rgba(255, 255, 255, 0.892);
+        }
+        #home::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 900px;
+            width: 100%;
+            z-index: -1;
+            opacity: .8;
+
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 30%;
+            right:40%;
+        }
+        .headings{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            text-align: center;
+            margin: 40px 0px;
+        }
+        .title{
+            color: #01fbe6;
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            display: inline-block;
+            margin-bottom: 20px;
+            background: linear-gradient(120deg, #9d9d1f 20.69%, #d99ba2 50.19%,#85aaadc6 79.69%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /*about section*/
+        #about{
+            display: flex;
+            flex-direction: column;
+            height: 840px;
+            justify-content: center;
+            align-items: center;
+            color: rgba(205, 79, 216, 0.519);
+        }
+        .boxed1 {
+            border: 3px solid rgb(255, 253, 253) ; 
+            background: hsla(148, 14%, 18%, 0.776);
+        height: 10%; 
+        width: 100%; 
+        top: 10%;
+        left: 20%;
+        color: rgba(255, 255, 255, 0.811);
+        font-size: 2rem;
+        }
+        #pic{
+            display: flex;
+        }
+        #pic img{
+
+            left: 5%;
+            width: 500px;
+            height: 450px;
+        }
+        #intro{
+            display: flex;
+            flex-direction: column;
+            text-align: justify;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px;
+            
+        }
+        #intro h3{
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #8f9dca;
+        }
+        div .boxed {
+            background:linear-gradient(120deg, #090a33 20.69%, #255661 50.19%,#4e4f28c6 79.69%);
+            width: 60rem;
+            height: 20rem;
+            margin: 50px auto 0px;
+            border-radius: 10%;
+            color:whitesmoke;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            padding-top: 10%;
+        }
+        #skills{
+            width:100%;
+        height:100vh;
+        box-sizing: border-box;
+        font-family: calibri;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px ;
+
+        }
+        .boxed3 {
+            border: 3px solid rgb(255, 253, 253) ; 
+            background: hsla(148, 14%, 18%, 0.776);
+        height: 10%; 
+        width: 100%; 
+        top: 10%;
+        left: 20%;
+        color: rgb(248, 248, 248);
+        font-size: 2rem;
+        }
+        p {
+            text-align: center;
+            padding-top: 5%;
+            color: aliceblue;
+        }
+        .s-heading h1{
+        color:#FFFFFF;
+        font-size: 3rem;
+        margin: 0px;
+        padding: 0px;
+
+        }
+        .s-heading p{
+        color:rgba(255,255,255,0.30);
+        font-size: 1rem;
+        margin: 0px;
+        padding: 0px;
+        }
+        .s-heading{
+        text-align: center;
+        margin: 20px 0px;
+        }
+        .s-box{
+        background-color: #2B2B2B;
+        width:350px;
+        height: 500px;
+        margin: 20px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        position: relative;
+        }
+        .b-container{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+
+
+        }
+        .s-b-img{
+        width: 100%;
+        height: 70%;
+
+        }
+        .s-b-img img{
+        width:100%;
+        height: 100%;
+
+        }
+        .s-b-text{
+        width: 100%;
+        height: 30%;
+        background-color:#1E1E1E;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        }
+        .s-b-text a{
+        margin: 0px;
+        color:#FFFFFF;
+        font-size: 1.1rem;
+        font-family: calibri;
+        display: block;
+        display: -webkit-box;
+        max-width: 80%;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+        .s-b-text a:hover{
+        color:rgba(255,255,255,0.50)
+        }
+        .s-type{
+        font-family: calibri;
+        color:#FFFFFF;
+        background-color: #151515;
+        padding: 10px 15px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+        }
+        .s-box:hover{
+        transform:translateY(-10px);
+        transition: all ease 0.3s;
+
+        }
+        #contact{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items: center;
+            height: 200px;
+            background-color: #F4F7FF;
+            margin: 20px 0px;
+            box-sizing: border-box;
+            box-shadow:2px 0px 20px rgba(0,0,0,0.4); 
+        }
+        .c-b-heading{
+            font-size: 2rem;
+            color:#1E1E1E;
+            font-family: calibri;
+            margin: 10px;
+            padding: 5px;
+            letter-spacing: 4px;
+            border-bottom: 2px solid #1E1E1E;
+            
+        }
+        #contact button{
+            color:#FFFFFF;
+            font-size: 1rem;
+            font-family: calibri;
+            width:150px;
+            height: 40px;
+            margin: 10px;
+            background-color: #1E1E1E;
+            border: none;
+            outline: none;
+            box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
+        }
+        #contact button:hover{
+            background-color: #17d1ac;
+            color:#000000;
+            transition: all ease 0.5s;
+            font-weight: bold;
+        }
+        #contact-form{
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #contact-form form{
+            display: flex;
+            width: 70%;
+            height: 60vh;
+            background-color: #1A1A1A;
+            box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.01)
+        }
+        
+        .contact-left{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-right{
+            width: 60%;
+            height: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-left: 1px solid rgba(255,255,255,0.08);
+        }
+        .contact-right button{
+            width: 100%;
+            height: 50px;
+            background-color: #1ED98B;
+            font-weight: bold;
+            outline: none;
+            border: none;
+            margin: 0px;
+            color:#1B1B1B;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        
+        }
+        .c-l-heading{
+            font-family: calibri;
+            color:#FFFFFF;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-weight: 400;
+            
+        }
+        .f-name,.f-email{
+            display: flex;
+            flex-direction: column;
+            font-family: calibri;
+            
+        }
+        .f-name font,.f-email font{
+            color:#BFBFBF;
+            font-size: 22px;
+        }
+        .f-name input,.f-email input{
+            height: 30px;
+            width:250px;
+            border: none;
+            outline: none;
+            background-color:transparent;
+            border-bottom: 1px solid #929292;
+            color:#FFFFFF;
+            margin: 10px 0px;
+        }
+        .f-email input::placeholder,
+        .f-name input::placeholder{
+            opacity: 0.5;
+            letter-spacing: 1px;
+        }
+        .f-email input:focus,
+        .f-name input:focus{
+            border-bottom: 1px solid #17d1ac;
+            transition: all ease 0.5s;
+        }.message font{
+            font-size: 18px;
+            color:#4E4E4E;
+            font-family: calibri;
+            
+        }
+        .message{
+            margin: 20px;
+        }
+        .contact-right textarea{
+            width: 100% !important;
+            height: 320px !important;
+            border: none;
+            outline: none;
+            background-color:transparent;
+            box-sizing: border-box;
+            color:#EBEBEB;
+            font-size: 16px;
+        }
+        .contact-right textarea::placeholder{
+            color:#EBEBEB;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-family: calibri;
+        }
+        .contact-right button:active{
+            transform: scale(1.04);
+            transition: all ease 0.1s;
+        }
+          </style>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title> 
+          
+      </head>
+      <body>
+          <nav class = "navbar">
+              <ul>
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about me">about me</a></li>
+                  <li><a href="#Skills">My Skills</a></li>
+                  <li><a href="#contact">Contact Me</a></li>
+              </ul>
+          </nav>
+          <section id="home">
+              <div class="main">
+                <span class="title">hello,</span>
+                  <h1 class="headings">I AM <br> BHAGYA SRI</h1>
+                  <a href="#" class="btn">Download CV</a>
+              </div>
+
+          </section>
+          <section id="about me">
+              
+            <div class="boxed1">
+            <h2 class="headings">ABOUT ME</h2>
+        </div>
+              <div id="pic">  
+                  <img src="https://res.cloudinary.com/csi-spm-20/image/upload/v1661773001/bhags_zz05go.jpg" alt="">
+
+                  <div id="intro">
+                      <h3>YENNE BHAGYA SRI </h3>
+                      <div class="boxed">
+                      <p>I am a computer science student.
+                        I am from Srikakulam district, Andhra Pradesh. I love travelling, cooking new dishes,
+                        writing what came into my mind, gazing sky, taking photos of sky, plants, etc and spending time with me. I love helping people and animals. I believe in the power of simplicity.
+                        I want to do things in different ways and I want my work to be creative and simple. 
+                        My hobbies are reading, writing, watching movies, learning some new things.
+                    Confidence, patience, Curiosity are my strengths and I don't know my weaknesses. </p>
+                    </div>
+                    </div>
+
+                  </div>
+              </div>
+          </section>
+          
+          <section id="Skills">
+                     
+<style type="text/css">
+    body{
+        background-image: url("https://spacecenter.org/wp-content/uploads/2020/03/NGC6302_ButterflyNebula_NASA1024.jpg");
+        background-size: cover;
+    }
+</style>
+              <!--services-------------------->
+        <!--heading-------------->
+
+        <div class="boxed3">
+            <h2 class="headings">Skills</h2>
+        </div>
+        <p>Here Is The Some Skills Which I know.</p>
+        </div>
+        <!--services-box-container--------->
+        <div class="b-container">
+        <!--box-1---------------->
+        <div class="s-box">
+        <!--img------------->
+        <div class="s-b-img">
+            <!--type----------->
+            <div class="s-type">PYTHON</div>
+            <!--name------->
+            <img src="https://img.freepik.com/free-vector/astronaut-lying-moon-illustration_153233-240.jpg?w=2000">
+        </div>
+        <!--text----------------->
+        <div class="s-b-text">
+        <a href="#">I have basic knowledge about python.I am still learning new things in this language. </a>	
+        </div>
+        </div>
+            <!--box-2---------------->
+        <div class="s-box">
+        <!--img------------->
+        <div class="s-b-img">
+        <!--type----------->
+            <div class="s-type">c</div>
+            <!--name------->
+            <img src="https://static.vecteezy.com/system/resources/previews/006/207/574/large_2x/illustration-of-astronaut-with-dark-purple-background-vector.jpg">
+        </div>
+        <!--text----------------->
+        <div class="s-b-text">
+        <a href="#">I have basic knowledge about "c".I am still learning new things in this language.</a>	
+        </div>
+        </div>
+            <!--box-3---------------->
+        <div class="s-box">
+        <!--img------------->
+        <div class="s-b-img">
+            <!--type----------->
+            <div class="s-type">JAVA</div>
+            <!--name------->
+            <img src="https://i.pinimg.com/originals/a5/e3/da/a5e3da99a7cb844a2c01af20ba34d69a.jpg">
+        </div>
+        <!--text----------------->
+        <div class="s-b-text">
+        <a href="#">I have basic knowledge about java.I am still learning new things in this language.</a>	
+        </div>
+        </div>
+        </div>
+        
+      
+              
+          </section>
+          <!--Contact-btn------------------>
+	<section id="contact">
+        <!--heading-------------->
+        <h1 class="c-b-heading">If You Have Any thing to discuss ?</h1>
+        <!--btn-------->
+            <button >Contact Me</button>
+        </section>
+         <!--contact-form------------------->
+	<section id="contact-form">
+        <form>
+        <!--left--------------------------------------->
+        <div class="contact-left">
+        <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Writ</font>e here</h1>
+        <!--name-------->
+        <div class="f-name">
+        <font >Name</font>
+        <input type="text" placeholder="Full Name"/>
+        </div>
+        <!--email-------->
+        <div class="f-email">
+        <font >Email</font>
+        <input type="email" placeholder="Example@gmail.com"/>
+        </div>
+        </div>
+        <!--right------------------------------------------->
+        <div class="contact-right">
+        <!--message-------->
+        <div class="message">
+        <font >Message</font>
+        <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+        </div>
+        <!--submit-btn------------>
+        <button>submit</button>
+        </div>
+            
+        </form>
+        </section>
+        
+      
+      </body>
+  </html>
